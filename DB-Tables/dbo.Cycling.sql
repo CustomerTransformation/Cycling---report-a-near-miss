@@ -1,7 +1,7 @@
 USE [ProdReportIT]
 GO
 
-/****** Object:  Table [dbo].[Cycling]    Script Date: 05/09/2019 14:26:31 ******/
+/****** Object:  Table [dbo].[Cycling]    Script Date: 30/09/2019 10:13:13 ******/
 SET ANSI_NULLS ON
 GO
 
@@ -10,7 +10,6 @@ GO
 
 CREATE TABLE [dbo].[Cycling](
 	[ID] [int] IDENTITY(1,1) NOT NULL,
-	[ContactDetails] [varchar](500) NULL,
 	[Postcode] [varchar](10) NULL,
 	[DateIncident] [date] NOT NULL,
 	[TimeIncident] [time](7) NOT NULL,
@@ -33,10 +32,6 @@ CREATE TABLE [dbo].[Cycling](
 	[TypeOfMiss] [varchar](60) NULL,
 	[SpecifyOther] [varchar](max) NULL,
 	[ReportingDate] [date] NULL,
-	[Name] [varchar](60) NULL,
-	[EmailAddress] [varchar](100) NULL,
-	[Telephone] [varchar](100) NULL,
-	[Mobile] [varchar](20) NULL,
 	[EASTING] [varchar](max) NULL,
 	[NORTHING] [varchar](max) NULL,
 PRIMARY KEY CLUSTERED 

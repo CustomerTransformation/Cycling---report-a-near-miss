@@ -1,7 +1,7 @@
 USE [ProdReportIT]
 GO
 
-/****** Object:  View [dbo].[CyclingView]    Script Date: 05/09/2019 14:26:55 ******/
+/****** Object:  View [dbo].[CyclingView]    Script Date: 30/09/2019 10:13:34 ******/
 SET ANSI_NULLS ON
 GO
 
@@ -17,14 +17,11 @@ GO
 
 
 
+
 CREATE VIEW [dbo].[CyclingView]
 AS
 SELECT 
  Replace(CONVERT(VARCHAR(20), ReportingDate, 103),'-','/')AS ReportingDate,
- Name,
- EmailAddress,
- Telephone,
- Mobile,
  UPPER(REPLACE(Postcode, ' ' ,''))AS CustomerPostcode,
  Replace(CONVERT(VARCHAR(20), DateIncident, 103),'-','/')AS DateIncident,
  CONVERT(varchar (20),TimeIncident, 108)AS TimeIncident, 
